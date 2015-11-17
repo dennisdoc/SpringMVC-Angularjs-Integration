@@ -1,0 +1,24 @@
+.status_span {
+	float: none;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #FFFFFF;
+	display: block;
+}
+
+.status_offline {
+	background: #c00;
+	color: #fff;
+}
+
+.status_online {
+	background: #0c0;
+	color: #fff;
+}
+
+.colortable {
+	background: #dceaf4;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}

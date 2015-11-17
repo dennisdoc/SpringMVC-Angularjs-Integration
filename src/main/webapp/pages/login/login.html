@@ -1,0 +1,15 @@
+<div class="content" >
+	<form >
+		<div class="form-control-wrapper form-margin">
+			<input class="form-control" required="required" ng-class="usuario=='' ? 'empty':'' " ng-model="usuario" type="text" />
+			<div class="floating-label">Usuario</div>
+			<span class="material-input"></span>
+		</div>
+		<div class="form-control-wrapper form-margin">
+			<input class="form-control" required="required" ng-class="senha=='' ? 'empty':'' " ng-model="senha" type="password" />
+			<div class="floating-label">Senha</div>
+			<span class="material-input"></span>
+		</div>
+		<input class="btn btn-primary" type="submit" value="Salvar" ng-click="saveLogin()"/>
+	</form>
+</div>

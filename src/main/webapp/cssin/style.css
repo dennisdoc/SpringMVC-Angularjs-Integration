@@ -1,0 +1,110 @@
+body {
+  background-color: #e1e1e1;
+  color:#444;
+}
+
+#userList {
+  display:none;
+}
+
+#loader {
+  position:absolute;
+  z-index:2;
+  width:100%;
+  text-align:center;
+  top:40%;
+}
+.nav-project{
+	background-color: grey !important;
+	color:white !important;
+	height: 40px;
+	width: 100%;
+}
+.nav-project a{
+	color:white;
+}
+.conteudo{
+	margin:15px 15px 15px 15px;
+}
+.canvas-form{
+	float: left;
+}
+.canvas-game{
+	box-shadow: 10px 10px 5px #888888;
+	float:left;
+}
+.option-key{
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+	background-size:15px;
+}
+.canvas-menu{
+	float:left;
+	color:white;
+	font-size:50px;
+	padding:15px;
+	background: linear-gradient(to bottom, #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%);
+}
+.link-menu{
+	display:block;
+	color:white;
+}
+.link-menu:hover{
+	opacity:0.8;
+	color:#E0EAFF;
+	cursor:pointer;
+}
+.itemPicker{
+	height: 30px;
+	max-width: 100px;
+}
+.itemPicker:hover{
+	cursor:pointer;
+	border: 1px solid blue;
+}
+.itemPicker:active{
+	border: 1px solid white;
+}
+.div-inline{
+	display: inline-block;
+}
+.img-select{
+	height: 14px;
+	display: inline-block;
+}
+
+.img-picker{
+	height: 25px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	display: block;
+}
+.img-picker:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	cursor:pointer;
+}
+.mouse-items{
+	float:left;
+	display: inline-block;
+	margin-left:10px;
+}
+.canvasFormLabel{
+	margin: 10px 0 10px 15px;
+    text-align: left;
+}
+.form-margin{
+	margin-bottom: 15px;
+}
+.overlay-edicaoMapa{
+	background-color:rgba(255, 255, 255, 0.8);
+	position: absolute;
+}
+.no-pad{
+	padding:0px !important;
+}
+.no-margin{
+	margin:0px !important;
+	padding:0px !important;
+}

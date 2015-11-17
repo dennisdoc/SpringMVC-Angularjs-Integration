@@ -1,0 +1,35 @@
+<div>
+	<style type="text/css">
+		#loading {
+		   position: fixed;
+		   display: none;
+		   top: 0;
+		   right: 0;
+		   bottom: 0;
+		   left: 0;
+		   z-index: 1100;
+		   background-color: white;
+		   opacity: .6;
+		}
+		
+		.loader {
+		   position: absolute;
+		   left: 50%;
+		   top: 50%;
+		   margin-left: -32px; /* -1 * image width / 2 */
+		   margin-top: -32px; /* -1 * image height / 2 */
+		   display: block;
+		}
+		.canvasLoading{
+			position: absolute;
+		 	top: calc(50% - 50px);
+		  	top: -webkit-calc(50% - 100px);
+		  	left: calc(50% - 200px);
+		  	left: -webkit-calc(50% - 200px);
+		}
+	</style>
+	
+	<div class="loading" >
+	    <canvas id="canvasLoad" class="canvasLoading" ></canvas>
+	</div>
+</div>
