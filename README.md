@@ -9,6 +9,7 @@ frameworks:
 java:
 mongodb Client
 Spring mvc
+Maven
 
 javascript:
   angularjs
