@@ -10,14 +10,28 @@ import com.mongodb.MongoClient;
 
 @Repository
 public class RepositoryConnection {
-
+	
+	private static RepositoryConnection instance=null;
+	
+	private MongoConection connection = MongoConection.getInstance();
+	
+	protected RepositoryConnection(){
+		
+	}
+	
+	public static RepositoryConnection construct(){
+		if(instance==null){
+			instance= new RepositoryConnection();
+		}
+		return instance;
+	}
+	
 	public DB getDb() {
-		MongoClient mongoClient = new MongoClient();
-		List<String> dbs = mongoClient.getDatabaseNames();
+		List<String> dbs = connection.getMongoClient().getDatabaseNames();
 		for(String name : dbs){
 			System.out.println(name);
 		}
-		return mongoClient.getDB("ballGame");
+		return connection.getMongoClient().getDB("ballGame");
 	}
 	
 	public DBCollection getCollection(String collection){
